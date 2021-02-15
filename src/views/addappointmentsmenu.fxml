@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="877.0" prefWidth="858.0" style="-fx-background-color: #A6B5EC;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addappointmentscontroller">
+   <children>
+      <Pane prefHeight="877.0" prefWidth="230.0" style="-fx-background-color: #1d2336;">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="230.0" style="-fx-background-color: #1d2336;">
+               <children>
+                  <Label layoutX="33.0" layoutY="-35.0" prefHeight="119.0" prefWidth="164.0" text="Add or Update Appointment" textAlignment="CENTER" textFill="#f1e7e7" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="customerNameTextField" alignment="CENTER" disable="true" editable="false" layoutX="37.0" layoutY="54.0" onAction="#customerNameTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Select Customer Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children></Pane>
+            <Label layoutX="18.0" layoutY="272.0" text="Type" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="330.0" text="Contact" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="390.0" text="Location" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="510.0" text="Start Time" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="570.0" text="End Time" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="630.0" text="User ID" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="690.0" text="Customer ID" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="autogenapptID" alignment="CENTER" disable="true" editable="false" layoutX="25.0" layoutY="105.0" onAction="#autogenapptIDAction" prefHeight="30.0" prefWidth="181.0" promptText="Auto Gen Appointment ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="titleTextField" alignment="CENTER" layoutX="36.0" layoutY="157.0" onAction="#titleTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Title">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="descriptionTextField" alignment="CENTER" layoutX="36.0" layoutY="210.0" onAction="#descriptionTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Description">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="typeComboBox" layoutX="66.0" layoutY="270.0" onAction="#typeComboBoxAction" prefWidth="150.0" />
+            <ComboBox fx:id="contactComboBox" layoutX="66.0" layoutY="328.0" onAction="#contactComboBoxAction" prefWidth="150.0" />
+            <ComboBox fx:id="locationComboBox" layoutX="66.0" layoutY="388.0" onAction="#locationComboBoxAction" prefWidth="150.0" />
+            <DatePicker fx:id="datePickerBox" layoutX="29.0" layoutY="447.0" onAction="#datePickerBoxAction" />
+            <ComboBox fx:id="startComboBox" layoutX="103.0" layoutY="508.0" onAction="#startComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="endComboBox" layoutX="103.0" layoutY="568.0" onAction="#endComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="userIDComboBox" layoutX="103.0" layoutY="628.0" onAction="#userIDComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="customerIDComboBox" layoutX="103.0" layoutY="688.0" onAction="#customerIDComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <Button fx:id="saveCustomerButton" layoutX="47.0" layoutY="768.0" mnemonicParsing="false" onAction="#saveCustomerButtonAction" style="-fx-background-color: #2880f2;" text="Save Appointment" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="mainMenuButton" layoutX="11.0" layoutY="833.0" mnemonicParsing="false" onAction="#mainMenuButtonAction" style="-fx-background-color: #d44c5c;" text="Back to Main Menu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="23.0" layoutY="533.0" text="AM-PM" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="593.0" text="AM-PM" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="appointmentTableView" layoutX="230.0" layoutY="49.0" prefHeight="827.0" prefWidth="628.0" stylesheets="@../images/css/tableview.css">
+        <columns>
+          <TableColumn fx:id="columnCustID" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="columnCustName" editable="false" prefWidth="75.0" text="Customer Name" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="401.0" text="Customer Selection" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

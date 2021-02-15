@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="877.0" prefWidth="230.0" style="-fx-background-color: #A6B5EC;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.updateappointmentscontroller">
+   <children>
+      <Pane prefHeight="877.0" prefWidth="618.0" style="-fx-background-color: #1d2336;">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="230.0" style="-fx-background-color: #1d2336;" />
+            <Label layoutX="215.0" layoutY="282.0" text="Type" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="340.0" text="Contact" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="204.0" layoutY="400.0" text="Location" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="520.0" text="Start Time" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="580.0" text="End Time" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="640.0" text="User ID" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="700.0" text="Customer ID" textFill="#f1e7e7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="182.0" layoutY="-23.0" prefHeight="119.0" prefWidth="256.0" text="Update Appointment" textAlignment="CENTER" textFill="#f1e7e7" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="508.0" prefHeight="145.0" prefWidth="197.0" text="Please make sure to select an item so that it is not a prompt, this is a bug with jfoenix comboboxes" textFill="#d44c5c" wrapText="true" />
+            <Line endX="100.0" layoutX="519.0" layoutY="505.0" startX="-519.0" stroke="#d44c5c" />
+            <Line endX="100.0" layoutX="517.0" layoutY="668.0" startX="-519.0" stroke="#d44c5c" />
+            <TextField fx:id="customerNameTextField" alignment="CENTER" layoutX="229.0" layoutY="61.0" onAction="#customerNameTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Customer Name" />
+            <TextField fx:id="autogenapptID" layoutX="209.0" layoutY="109.0" onAction="#autogenapptIDAction" prefHeight="25.0" prefWidth="197.0" promptText="Auto Generated Appointment ID" />
+            <TextField fx:id="titleTextField" alignment="CENTER" layoutX="230.0" layoutY="159.0" onAction="#titleTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Title" />
+            <TextField fx:id="descriptionTextField" alignment="CENTER" layoutX="232.0" layoutY="210.0" onAction="#descriptionTextFieldAction" prefHeight="25.0" prefWidth="157.0" promptText="Description" />
+            <ComboBox fx:id="typeComboBox" layoutX="300.0" layoutY="280.0" onAction="#typeComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="contactComboBox" layoutX="300.0" layoutY="338.0" onAction="#contactComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="locationComboBox" layoutX="300.0" layoutY="398.0" onAction="#locationComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <DatePicker fx:id="datePickerBox" layoutX="212.0" layoutY="453.0" onAction="#datePickerBoxAction" prefHeight="25.0" prefWidth="197.0" promptText="Local Date" />
+            <ComboBox fx:id="startComboBox" layoutX="300.0" layoutY="518.0" onAction="#startComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="endComboBox" layoutX="300.0" layoutY="578.0" onAction="#endComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="userIDComboBox" layoutX="300.0" layoutY="638.0" onAction="#userIDComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <ComboBox fx:id="customerIDComboBox" layoutX="300.0" layoutY="698.0" onAction="#customerIDComboBoxAction" prefHeight="25.0" prefWidth="113.0" />
+            <Button fx:id="saveCustomerButton" layoutX="225.0" layoutY="769.0" mnemonicParsing="false" onAction="#saveCustomerButtonAction" style="-fx-background-color: #2880f2;" text="Update Appointment" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="mainMenuButton" layoutX="14.0" layoutY="826.0" mnemonicParsing="false" onAction="#mainMenuButtonAction" style="-fx-background-color: #d44c5c;" text="Back to Main Menu" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>

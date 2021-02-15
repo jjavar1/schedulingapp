@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="761.0" prefWidth="1006.0" style="-fx-background-color: #1d2336;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reportsmenucontroller">
+   <children>
+      <Label layoutX="89.0" layoutY="142.0" text="Appointments By Month" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="142.0" text="Total Appointments Type" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="417.0" text="Total Locations" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="678.0" layoutY="417.0" text="Total Customers" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="14.0" text="Reports Menu" textFill="#f1e7e7">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="appointmentsByMonthTextArea" layoutX="3.0" layoutY="185.0" prefHeight="222.0" prefWidth="475.0" />
+      <TextArea fx:id="totalAppointmentsTextArea" layoutX="531.0" layoutY="185.0" prefHeight="222.0" prefWidth="475.0" />
+      <TextArea fx:id="contactScheduleTextArea" layoutX="3.0" layoutY="464.0" prefHeight="222.0" prefWidth="475.0" />
+      <TextArea fx:id="totalCustomersTextArea" layoutX="537.0" layoutY="464.0" prefHeight="222.0" prefWidth="475.0" />
+      <Button fx:id="mainMenuButton" layoutX="14.0" layoutY="717.0" mnemonicParsing="false" onAction="#mainMenuButtonAction" style="-fx-background-color: #d44c5c;" text="Back to Main Menu" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="appointmentsMenuButton" layoutX="176.0" layoutY="34.0" mnemonicParsing="false" onAction="#appointmentsMenuButtonAction" style="-fx-background-color: #2880f2;" text="Appointments Menu" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="customerMenuButton" layoutX="678.0" layoutY="34.0" mnemonicParsing="false" onAction="#customerMenuButtonAction" style="-fx-background-color: #2880f2;" text="Customers Menu" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

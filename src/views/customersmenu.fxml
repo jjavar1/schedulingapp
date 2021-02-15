@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id=".tableview" prefHeight="574.0" prefWidth="1068.0" style="-fx-background-color: #a8ceff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.customermenucontroller">
+   <children>
+      <Pane prefHeight="573.0" prefWidth="252.0" style="-fx-background-color: #1d2336;">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="Customer Editor" textFill="#f1e7e7">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="autoGenLabel" alignment="CENTER" disable="true" editable="false" layoutX="41.0" layoutY="94.0" onAction="#autoGenLabelAction" prefHeight="25.0" prefWidth="172.0" promptText="Auto Generated Customer ID" />
+            <TextField fx:id="customerNameLabel" alignment="CENTER" layoutX="48.0" layoutY="144.0" onAction="#customerNameAction" prefHeight="25.0" prefWidth="157.0" promptText="Customer Name" />
+            <TextField fx:id="customerAddressLabel" alignment="CENTER" layoutX="47.0" layoutY="194.0" onAction="#customerAddressAction" prefHeight="25.0" prefWidth="157.0" promptText="Customer Address" />
+            <TextField fx:id="customerPostalLabel" alignment="CENTER" layoutX="49.0" layoutY="247.0" onAction="#customerPostalAction" prefHeight="25.0" prefWidth="157.0" promptText="Customer Postal Code" />
+            <TextField fx:id="phoneNumberLabel" alignment="CENTER" layoutX="48.0" layoutY="297.0" onAction="#phoneNumberAction" prefHeight="25.0" prefWidth="157.0" promptText="Phone Number" />
+            <ComboBox fx:id="countryComboBox" layoutX="22.0" layoutY="350.0" onAction="#countryComboBoxAction" prefHeight="25.0" prefWidth="212.0" promptText="Country" />
+            <ComboBox fx:id="cityComboBox" layoutX="22.0" layoutY="410.0" onAction="#cityComboBoxAction" prefHeight="25.0" prefWidth="212.0" promptText="City" />
+            <Button fx:id="saveButton" layoutX="100.0" layoutY="448.0" mnemonicParsing="false" onAction="#saveButtonAction" style="-fx-background-color: #2880f2;" text="Save" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="529.0" mnemonicParsing="false" onAction="#backButtonAction" style="-fx-background-color: #d44c5c;" text="Back to Main Menu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="94.0" layoutY="488.0" mnemonicParsing="false" onAction="#cancelButtonAction" style="-fx-background-color: #d44c5c;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="customerTreeTable" layoutX="252.0" layoutY="103.0" prefHeight="471.0" prefWidth="817.0" stylesheets="@../images/css/tableview.css">
+        <columns>
+          <TableColumn fx:id="custID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="custName" prefWidth="89.0" text="Name" />
+            <TableColumn fx:id="custPhone" prefWidth="89.0" text="Phone" />
+            <TableColumn fx:id="custPostal" prefWidth="103.0" text="Postal" />
+            <TableColumn fx:id="custAddress" prefWidth="110.0" text="Address" />
+            <TableColumn fx:id="custCountry" prefWidth="123.0" text="Country ID" />
+            <TableColumn fx:id="custLastUpdate" prefWidth="227.0" text="Last Update" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="infoLabel" layoutX="758.0" layoutY="14.0" text="Select Delete again to Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateButton" layoutX="461.0" layoutY="42.0" mnemonicParsing="false" onAction="#updateButtonAction" style="-fx-background-color: #2880f2;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="addButton" layoutX="635.0" layoutY="42.0" mnemonicParsing="false" onAction="#addButtonAction" style="-fx-background-color: #2880f2;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="806.0" layoutY="42.0" mnemonicParsing="false" onAction="#deleteButtonAction" style="-fx-background-color: #2880f2;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
