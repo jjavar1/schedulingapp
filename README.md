@@ -6,6 +6,6 @@ OpenJDK 11.0.8.10 used
 javafx-sdk-11.0.2 used
 
 
-Tp run the program, simply run Main.java through the IDE. Make sure you have the correct versions of the libraries used.
+To run the program, simply run Main.java through the IDE. Make sure you have the correct versions of the libraries used.
 
 The additional report was a list of the total number of appointments by location.
